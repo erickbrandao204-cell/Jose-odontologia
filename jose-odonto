@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>José Patrício Odontologia | Resultados Naturais e Excelência</title>
+
+<meta name="description" content="José Patrício Odontologia no Vale do Aço - MG. Tratamentos odontológicos modernos, estética, reabilitação oral e resultados naturais. Agende sua consulta.">
+
+<meta name="keywords" content="dentista Vale do Aço, odontologia estética, implantes dentários, prótese dentária, sorriso natural">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+:root{
+--navy:#1a3d5c;
+--blue:#4a90e2;
+--light:#f5f8fc;
+--gray:#666;
+--white:#fff;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Montserrat',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+color:#333;
+background:#fff;
+}
+
+section{
+padding:80px 8%;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+}
+
+
+/* HEADER */
+
+header{
+position:fixed;
+width:100%;
+top:0;
+background:#ffffffee;
+backdrop-filter:blur(10px);
+z-index:1000;
+box-shadow:0 2px 15px #0001;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+}
+
+.logo{
+font-size:30px;
+font-weight:700;
+color:var(--navy);
+}
+
+.logo span{
+color:var(--blue);
+}
+
+nav a{
+text-decoration:none;
+margin-left:25px;
+color:var(--navy);
+font-weight:500;
+}
+
+
+/* HERO */
+
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+background:
+linear-gradient(90deg,#fff 35%,transparent),
+url("images/consultorio.jpg");
+background-size:cover;
+background-position:center;
+}
+
+.hero-content{
+max-width:600px;
+}
+
+.hero h1{
+font-size:48px;
+color:var(--navy);
+line-height:1.2;
+}
+
+.hero p{
+margin:25px 0;
+font-size:20px;
+color:#555;
+line-height:1.6;
+}
+
+.btn{
+display:inline-block;
+background:var(--blue);
+color:#fff;
+padding:15px 35px;
+border-radius:30px;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
+
+.btn:hover{
+background:var(--navy);
+}
+
+
+/* TITLES */
+
+.title{
+text-align:center;
+margin-bottom:50px;
+}
+
+.title h2{
+font-size:36px;
+color:var(--navy);
+}
+
+.title p{
+color:var(--gray);
+margin-top:15px;
+}
+
+
+/* SERVICES */
+
+.services{
+background:var(--light);
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:35px 25px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 10px 30px #0001;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card i{
+font-size:40px;
+color:var(--blue);
+margin-bottom:20px;
+}
+
+.card h3{
+color:var(--navy);
+margin-bottom:10px;
+}
+
+
+/* GALERIA */
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.gallery img{
+width:100%;
+border-radius:20px;
+height:300px;
+object-fit:cover;
+}
+
+
+/* SOBRE */
+
+.about{
+display:flex;
+gap:50px;
+align-items:center;
+}
+
+.about img{
+width:350px;
+border-radius:30px;
+}
+
+.about h2{
+color:var(--navy);
+font-size:35px;
+}
+
+.about p{
+line-height:1.8;
+margin-top:20px;
+color:#555;
+}
+
+
+/* DIFERENCIAIS */
+
+.values{
+background:var(--navy);
+color:white;
+}
+
+.values .card{
+background:white;
+}
+
+
+/* DEPOIMENTOS */
+
+.testimonials{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.testimonial{
+padding:30px;
+background:#f7f7f7;
+border-radius:20px;
+}
+
+
+/* FORM */
+
+form{
+max-width:600px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+input,textarea{
+padding:15px;
+border-radius:10px;
+border:1px solid #ddd;
+}
+
+button{
+border:0;
+cursor:pointer;
+}
+
+
+/* FOOTER */
+
+footer{
+background:#102c44;
+color:white;
+padding:40px 8%;
+text-align:center;
+}
+
+footer a{
+color:white;
+margin:10px;
+}
+
+
+/* WHATSAPP */
+
+.whatsapp{
+position:fixed;
+right:25px;
+bottom:25px;
+background:#25d366;
+color:white;
+width:60px;
+height:60px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:32px;
+z-index:999;
+}
+
+
+/* RESPONSIVO */
+
+@media(max-width:800px){
+
+.hero h1{
+font-size:34px;
+}
+
+.hero{
+background-position:center;
+}
+
+.about{
+flex-direction:column;
+}
+
+nav{
+padding:20px;
+}
+
+nav div{
+display:none;
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<nav>
+
+<div class="logo">
+<span>jp</span> José Patrício
+</div>
+
+<div>
+<a href="#servicos">Serviços</a>
+<a href="#sobre">Sobre</a>
+<a href="#contato">Contato</a>
+</div>
+
+</nav>
+
+</header>
+
+
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>
+Excelência em odontologia com resultados naturais
+</h1>
+
+<p>
+Quando a gente respeita o tempo, o natural e a essência de cada paciente... o resultado fala por si.
+</p>
+
+<a class="btn" href="https://wa.me/553333141557">
+Agendar Consulta
+</a>
+
+</div>
+
+</section>
+
+
+
+
+<section id="servicos" class="services">
+
+<div class="title">
+<h2>Nossos Tratamentos</h2>
+<p>Cuidado completo para transformar seu sorriso.</p>
+</div>
+
+
+<div class="cards">
+
+<div class="card">
+<i class="fa-solid fa-tooth"></i>
+<h3>Reabilitação Oral</h3>
+<p>Próteses e soluções para devolver função e estética.</p>
+</div>
+
+
+<div class="card">
+<i class="fa-solid fa-face-smile"></i>
+<h3>Alinhamento e Estética</h3>
+<p>Sorrisos harmônicos com planejamento personalizado.</p>
+</div>
+
+
+<div class="card">
+<i class="fa-solid fa-sparkles"></i>
+<h3>Limpeza e Prevenção</h3>
+<p>Cuidados para manter sua saúde bucal.</p>
+</div>
+
+
+<div class="card">
+<i class="fa-solid fa-user-doctor"></i>
+<h3>Tratamentos Especializados</h3>
+<p>Tecnologia e precisão em cada procedimento.</p>
+</div>
+
+
+</div>
+
+</section>
+
+
+
+
+<section>
+
+<div class="title">
+<h2>Casos Realizados</h2>
+<p>Resultados planejados respeitando cada paciente.</p>
+</div>
+
+
+<div class="gallery">
+
+<img src="images/caso1.jpg" alt="Antes e depois odontológico">
+
+<img src="images/caso2.jpg" alt="Resultado de tratamento dental">
+
+<img src="images/caso3.jpg" alt="Sorriso transformado">
+
+
+</div>
+
+</section>
+
+
+
+
+
+<section id="sobre">
+
+<div class="about">
+
+<img src="images/dr-jose.jpg" alt="Dr José Patrício odontologia">
+
+
+<div>
+
+<h2>Sobre o Dr. José Patrício</h2>
+
+<p>
+Com atuação focada em odontologia moderna, o Dr. José Patrício busca unir tecnologia, precisão e sensibilidade para entregar resultados naturais.
+</p>
+
+<p>
+Sua filosofia é baseada no respeito ao tempo, ao natural e à essência de cada paciente.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+<section class="values">
+
+<div class="title">
+<h2 style="color:white">Nossos Diferenciais</h2>
+</div>
+
+
+<div class="cards">
+
+
+<div class="card">
+<i class="fa-solid fa-microchip"></i>
+<h3>Tecnologia Moderna</h3>
+<p>Equipamentos avançados para diagnósticos precisos.</p>
+</div>
+
+
+<div class="card">
+<i class="fa-solid fa-star"></i>
+<h3>Resultados Naturais</h3>
+<p>Sorrisos personalizados e harmônicos.</p>
+</div>
+
+
+<div class="card">
+<i class="fa-solid fa-heart"></i>
+<h3>Atendimento Humanizado</h3>
+<p>Cuidado individual em todas as etapas.</p>
+</div>
+
+
+</div>
+
+</section>
+
+
+
+
+<section>
+
+<div class="title">
+<h2>O que nossos pacientes dizem</h2>
+</div>
+
+
+<div class="testimonials">
+
+<div class="testimonial">
+⭐⭐⭐⭐⭐
+<p>"Excelente atendimento, muito cuidado e profissionalismo."</p>
+</div>
+
+<div class="testimonial">
+⭐⭐⭐⭐⭐
+<p>"Meu sorriso ficou natural exatamente como eu imaginava."</p>
+</div>
+
+<div class="testimonial">
+⭐⭐⭐⭐⭐
+<p>"Clínica moderna e equipe muito acolhedora."</p>
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<section id="contato">
+
+<div class="title">
+
+<h2>Agende sua consulta</h2>
+
+<p>
+Telefone: +55 33 3314-1557
+</p>
+
+</div>
+
+
+<form>
+
+<input placeholder="Nome">
+
+<input placeholder="Telefone">
+
+<input placeholder="E-mail">
+
+<textarea placeholder="Como podemos ajudar?"></textarea>
+
+
+<button class="btn">
+Enviar Solicitação
+</button>
+
+
+</form>
+
+
+<br><br>
+
+
+<iframe
+src="https://maps.google.com/maps?q=Vale%20do%20Aco%20Minas%20Gerais&t=&z=13&ie=UTF8&iwloc=&output=embed"
+width="100%"
+height="300"
+style="border:0;border-radius:20px">
+</iframe>
+
+
+</section>
+
+
+
+
+<footer>
+
+<p>
+© 2026 José Patrício Odontologia
+</p>
+
+<p>
+<a href="#">Instagram</a>
+<a href="#">Facebook</a>
+</p>
+
+<p>
+Horário de funcionamento: Segunda a sexta - 08h às 18h
+</p>
+
+</footer>
+
+
+
+<a class="whatsapp"
+href="https://wa.me/553333141557">
+<i class="fa-brands fa-whatsapp"></i>
+</a>
+
+
+
+</body>
+</html>
